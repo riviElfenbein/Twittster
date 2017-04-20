@@ -1,0 +1,6 @@
+framework module TwittsterApi {
+  umbrella header "TwittsterApi-umbrella.h"
+
+  export *
+  module * { export * }
+}
