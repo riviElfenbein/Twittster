@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B5931BBA22DD6B68342875D /* Pods_Twittster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEF42695A5FB2937DDFB5B8 /* Pods_Twittster.framework */; };
 		A6A2B7401EA5F42000AFC741 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2B73F1EA5F42000AFC741 /* AppDelegate.swift */; };
 		A6A2B7421EA5F42000AFC741 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2B7411EA5F42000AFC741 /* ViewController.swift */; };
 		A6A2B7451EA5F42000AFC741 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A2B7431EA5F42000AFC741 /* Main.storyboard */; };
@@ -16,6 +15,7 @@
 		A6A2B74D1EA5F42000AFC741 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A2B74B1EA5F42000AFC741 /* LaunchScreen.storyboard */; };
 		A6A2B7581EA5F42000AFC741 /* TwittsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2B7571EA5F42000AFC741 /* TwittsterTests.swift */; };
 		A6A2B7631EA5F42000AFC741 /* TwittsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A2B7621EA5F42000AFC741 /* TwittsterUITests.swift */; };
+		C570C221FAE978213BA1A264 /* Pods_Twittster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5896E53DA78C6D7FBC9839D7 /* Pods_Twittster.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		132209550D063905BF0440DD /* Pods-Twittster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twittster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twittster/Pods-Twittster.release.xcconfig"; sourceTree = "<group>"; };
-		4CEF42695A5FB2937DDFB5B8 /* Pods_Twittster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twittster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5896E53DA78C6D7FBC9839D7 /* Pods_Twittster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twittster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3EA70A491FC4841FEDB4DE /* Pods_TwittsterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwittsterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D4DB9E0EB98B38DEB9277F /* Pods-Twittster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twittster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twittster/Pods-Twittster.debug.xcconfig"; sourceTree = "<group>"; };
 		A6A2B73C1EA5F42000AFC741 /* Twittster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twittster.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B5931BBA22DD6B68342875D /* Pods_Twittster.framework in Frameworks */,
+				C570C221FAE978213BA1A264 /* Pods_Twittster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +149,9 @@
 		FF82BC35E0E1166B0B0772BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4CEF42695A5FB2937DDFB5B8 /* Pods_Twittster.framework */,
 				5D3EA70A491FC4841FEDB4DE /* Pods_TwittsterTests.framework */,
 				F6122877C0D648969309ECC5 /* Pods_TwittsterUITests.framework */,
+				5896E53DA78C6D7FBC9839D7 /* Pods_Twittster.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

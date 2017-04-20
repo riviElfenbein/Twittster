@@ -7,7 +7,7 @@ target 'Twittster' do
   pod 'Fabric'
   pod 'TwitterKit'
   pod 'MBProgressHUD', '>= 1.0.0'
-  pod 'TwittsterApi',  :path => '../TwittsterApi'
+  pod 'TwittsterApi', :path => './TwittsterApi'
   
   
   

@@ -11,11 +11,11 @@ DEPENDENCIES:
   - Fabric
   - MBProgressHUD (>= 1.0.0)
   - TwitterKit
-  - TwittsterApi (from `../TwittsterApi`)
+  - TwittsterApi (from `./TwittsterApi`)
 
 EXTERNAL SOURCES:
   TwittsterApi:
-    :path: ../TwittsterApi
+    :path: ./TwittsterApi
 
 SPEC CHECKSUMS:
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
@@ -24,6 +24,6 @@ SPEC CHECKSUMS:
   TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
   TwittsterApi: a81bb6f677f42e258fb1fb59bb6b061b0622002f
 
-PODFILE CHECKSUM: fbf722581c0892542d79f139f7a498292c9b4cd2
+PODFILE CHECKSUM: f8a7b935a626f7478b10a4fa45fd2e09937ed912
 
 COCOAPODS: 1.2.1
