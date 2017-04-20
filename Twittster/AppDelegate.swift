@@ -8,16 +8,33 @@
 
 import UIKit
 import CoreData
+import Fabric
+import TwitterKit
+import TwittsterApi
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let TWITTER_APP_KEY = "131XZeefZyhR6JRnMMx5tPDVv"
+    let TWITTER_SECERET = "sLg7yOoprMFW3dTTyrEwFzuEKy4Kk1fv5py8SPGWsglAeHVBYI"
+   // https://docs.fabric.io/apple/twitter/advanced-setup.html
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        //Twitter.sharedInstance().start(withConsumerKey: TWITTER_APP_KEY, consumerSecret: TWITTER_SECERET)
+        Fabric.with([Twitter.self])
         // Override point for customization after application launch.
         return true
+    }
+    
+    func application(app: UIApplication, openURL url: URL, options: [String : AnyObject]) -> Bool {
+        if Twitter.sharedInstance().application(app, open:url as URL, options: options) {
+            return true
+        }
+        
+        // If you handle other (non Twitter Kit) URLs elsewhere in your app, return true. Otherwise
+        return false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -41,11 +58,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
-        self.saveContext()
+        //self.saveContext()
     }
 
     // MARK: - Core Data stack
 
+    @available(iOS 10.0, *)
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
@@ -75,6 +93,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data Saving support
 
+    @available(iOS 10.0, *)
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {

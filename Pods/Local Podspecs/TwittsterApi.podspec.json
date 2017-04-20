@@ -1,0 +1,23 @@
+{
+  "name": "TwittsterApi",
+  "version": "1.0.0",
+  "summary": "TwittsterApi An Easy way to search tweets in Twitter.",
+  "description": "TwittsterApi An Easy way to search tweets in Twitter.",
+  "homepage": "http://Rivi/TwittsterApi",
+  "license": "MIT",
+  "authors": "Rivi Elf",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": [
+    "TwittsterApi",
+    "TwittsterApi/**/*.{h,m,swift}"
+  ],
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "3"
+  },
+  "frameworks": "TwitterKit"
+}
